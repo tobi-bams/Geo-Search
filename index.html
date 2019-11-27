@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Geo-Search | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="brand">
+				<h1> Geo-Search</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Service</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Geo-Search Tool</h1>
+			<p>Geo-Search is a tool that allows people to search for places and extract information such as
+			timezone, map and local weather conditions like temperature, wind speed, humidity, and
+			precipitation.
+			</p>
+		</div>
+	</section>
+
+	<section id="search">
+		<div class="container">
+			<h1>Search you Desired Location</h1>
+			<form id="cityForm">
+				<input type="text" placeholder="Enter Location......" id="cityInput">
+				<small style="display: none" id="text_value">Please you must insert a city name</small>
+				<button type="submit" id="button1">Search</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="flex_box">
+					<div class="boxes">
+						<h3>Wind Speed</h3>
+						<p id="wind_speed"></p>				
+					</div>
+					<div class="boxes">
+						<h3>Temperature</h3>
+						<p id="temperature"></p>				
+					</div>
+					<div class="boxes">
+						<h3>Humidity</h3>
+						<p id="humidity"></p>				
+					</div>
+					<div class="boxes">
+						<h3>Weather Condition</h3>
+						<p id="weather_con"></p>				
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section id="converter" >
+		<div class="container">
+			<form id="form2">
+				<p id="speech"> Click the button below to convert the temperatue from Kelvin to Celcius and Faraherent</p>
+				<button type="submit" id="button2">Converter</button>
+			</form>
+		</div>
+	</section>
+	<section id="map_place">
+		<div class="container">
+			<div id="map">
+				<figure>
+					<img id="mapImage" style="width: 100%; height: auto;" >
+				</figure>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="weather.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+</body>
+</html>
